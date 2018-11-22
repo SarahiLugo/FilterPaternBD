@@ -10,6 +10,6 @@ package mx.edu.uttt.Filter.Entidad.Modelo;
  * @author moy-c
  */
 public class BD {
-    //este me toca moises
+    //este me toca moises otra modificacion
     int fer;
 }
