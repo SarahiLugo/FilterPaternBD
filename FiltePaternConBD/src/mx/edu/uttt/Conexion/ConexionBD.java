@@ -10,5 +10,5 @@ package mx.edu.uttt.Conexion;
  * @author moy-c
  */
 public class ConexionBD {
-    
+ //hola ;   
 }

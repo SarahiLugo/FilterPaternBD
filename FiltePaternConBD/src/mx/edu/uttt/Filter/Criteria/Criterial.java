@@ -5,10 +5,13 @@
  */
 package mx.edu.uttt.Filter.Criteria;
 
+import java.util.List;
+
 /**
  *
  * @author moy-c
  */
 public interface Criterial {
+    //  public List<Person> meetCriteria(List<Person> persons);
     
 }
