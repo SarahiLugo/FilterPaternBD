@@ -12,4 +12,5 @@ package mx.edu.uttt.Filter.Entidad.Modelo;
 public class BD {
     //este me toca moises otra modificacion
     int fer;
+    int moises;
 }
