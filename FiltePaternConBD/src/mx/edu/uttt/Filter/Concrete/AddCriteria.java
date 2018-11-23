@@ -7,6 +7,7 @@ package mx.edu.uttt.Filter.Concrete;
 
 import java.util.List;
 import mx.edu.uttt.Filter.Criteria.Criterial;
+import mx.edu.uttt.Filter.Entidad.Modelo.BD;
 
 /**
  *
@@ -16,13 +17,13 @@ public class AddCriteria implements Criterial{
    private Criterial criteria;
     private Criterial otherCriteria;
     
-public  AndCriteria(Criterial criteria, Criterial othCriteria){
+public  AddCriteria(Criterial criteria, Criterial othCriteria){
     this.criteria=criteria;
-    this.otherCriteria=othCriteria;
+    this.otherCriteria=otherCriteria;
 }
     @Override
-    public List<Person> meetCriteria(List<Person> persons) {
-         List<Person> firsCriteriaPersons = criteria.meetCriteria(persons);
+    public List<BD> meetCriteria(List<BD> persons) {
+         List<BD> firsCriteriaPersons = criteria.meetCriteria(persons);
         return otherCriteria.meetCriteria(firsCriteriaPersons);
     }
    
