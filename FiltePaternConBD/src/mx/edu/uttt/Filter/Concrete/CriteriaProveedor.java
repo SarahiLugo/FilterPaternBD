@@ -11,22 +11,19 @@ import mx.edu.uttt.Filter.Criteria.Criterial;
 
 /**
  *
- * @author moy-c
+ * @author Perla Sarahi
  */
-public class CriteriaNombre implements Criterial{
-
+public class CriteriaProveedor implements Criterial {
     @Override
     public List<Person> meetCriteria(List<Person> persons) {
-        List<Person> nomPersons = new ArrayList<Person>();
+        List<Person> provPersons = new ArrayList<Person>();
         for (Person person : persons){
-            if(person.getGenero().equalsIgnoreCase("Nombre")){
-                nomPersons.add(person);
+            if(person.getGenero().equalsIgnoreCase("Proveedor")){
+                provPersons.add(person);
             }
         }
-        return nomPersons;
+        return provPersons;
     }
     
-        
-    }
     
 }
