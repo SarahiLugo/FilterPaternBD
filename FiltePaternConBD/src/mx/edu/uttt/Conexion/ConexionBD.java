@@ -5,10 +5,28 @@
  */
 package mx.edu.uttt.Conexion;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 /**
  *
  * @author moy-c
  */
 public class ConexionBD {
- //hola ;   
+
+    Connection con = null;
+
+    public Connection obtenerConexion() {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bdventas", "root", "1234");
+        } catch (ClassNotFoundException e) {
+            System.err.print(e.getMessage());
+        } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
+        } finally {
+            return con;
+        }
+    }
 }
