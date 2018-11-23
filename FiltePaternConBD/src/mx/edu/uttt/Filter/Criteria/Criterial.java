@@ -6,12 +6,13 @@
 package mx.edu.uttt.Filter.Criteria;
 
 import java.util.List;
+import mx.edu.uttt.Filter.Entidad.Modelo.BD;
 
 /**
  *
  * @author moy
  */
 public interface Criterial {
-     public List<Person> meetCriteria(List<Person> persons);
+     public List<BD> meetCriteria(List<BD> producto);
     
 }
