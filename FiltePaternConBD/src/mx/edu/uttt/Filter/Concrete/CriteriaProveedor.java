@@ -8,6 +8,7 @@ package mx.edu.uttt.Filter.Concrete;
 import java.util.ArrayList;
 import java.util.List;
 import mx.edu.uttt.Filter.Criteria.Criterial;
+import mx.edu.uttt.Filter.Entidad.Modelo.BD;
 
 /**
  *
@@ -15,10 +16,10 @@ import mx.edu.uttt.Filter.Criteria.Criterial;
  */
 public class CriteriaProveedor implements Criterial {
     @Override
-    public List<Person> meetCriteria(List<Person> persons) {
-        List<Person> provPersons = new ArrayList<Person>();
-        for (Person person : persons){
-            if(person.getGenero().equalsIgnoreCase("Proveedor")){
+    public List<BD> meetCriteria(List<BD> persons) {
+        List<BD> provPersons = new ArrayList<BD>();
+        for (BD person : persons){
+            if(person.getProveedor().equalsIgnoreCase("Proveedor")){
                 provPersons.add(person);
             }
         }
