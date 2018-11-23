@@ -17,14 +17,14 @@ import mx.edu.uttt.Filter.Entidad.Modelo.BD;
 public class CriteriaNombre implements Criterial{
 
     @Override
-    public List<BD> meetCriteria(List<BD> persons) {
-        List<BD> nomPersons = new ArrayList<BD>();
-        for (BD person : persons){
-            if(person.getNombre().equalsIgnoreCase("Nombre")){
-                nomPersons.add(person);
+    public List<BD> meetCriteria(List<BD> producto) {
+        List<BD> nomProd = new ArrayList<BD>();
+        for (BD produc : producto){
+            if(produc.getNombre().equalsIgnoreCase("Nombre")){
+                nomProd.add(produc);
             }
         }
-        return nomPersons;
+        return nomProd;
     }
     
         

@@ -13,6 +13,6 @@ import mx.edu.uttt.Filter.Entidad.Modelo.BD;
  * @author moy
  */
 public interface Criterial {
-     public List<BD> meetCriteria(List<BD> persons);
+     public List<BD> meetCriteria(List<BD> producto);
     
 }
