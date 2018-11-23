@@ -9,9 +9,9 @@ import java.util.List;
 
 /**
  *
- * @author moy-c
+ * @author moy
  */
 public interface Criterial {
-    //  public List<Person> meetCriteria(List<Person> persons);
+     public List<Person> meetCriteria(List<Person> persons);
     
 }
